@@ -1,4 +1,4 @@
-const conexaoWS = new WebSocket('ws://' + location.hostname + ':8080');
+const conexaoWS = new WebSocket('ws://' + location.hostname + ':3000');
 
 let jogador = null;
 let jogoIniciado = false;
