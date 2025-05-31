@@ -102,3 +102,4 @@ botaoJogador2.addEventListener('click', () => {
     conexaoWS.send(JSON.stringify({ type: 'move', player: 'player2' }));
   }
 });
+//teste2
