@@ -1,4 +1,5 @@
-const conexaoWS = new WebSocket('ws://' + location.hostname + ':3000');
+const protocolo = location.protocol === 'https:' ? 'wss://' : 'ws://';
+const conexaoWS = new WebSocket(protocolo + location.host);
 
 let jogador = null;
 let jogoIniciado = false;
@@ -102,4 +103,3 @@ botaoJogador2.addEventListener('click', () => {
     conexaoWS.send(JSON.stringify({ type: 'move', player: 'player2' }));
   }
 });
-//teste2
